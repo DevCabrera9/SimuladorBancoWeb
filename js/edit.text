@@ -1,0 +1,39 @@
+function iniciarApp(){
+    validarLogin()
+}
+var cuentas = [
+    {
+        nombre: 'ivan',
+        contraseña: '1234',
+        saldo: 200
+    },
+    {
+        nombre: 'hugo',
+        contraseña: 6789,
+        saldo: 290
+    },
+    {
+        nombre: 'cabrera',
+        contraseña: 1011,
+        saldo: 67
+    }
+]
+const guardarCuenta = ''
+let saldo;
+function validarLogin(){
+    const user = document.getElementById('user')
+    const password = document.getElementById('password')
+    const loggin = document.getElementById('loggin')
+    loggin.addEventListener('click', function(evt){
+        evt.preventDefault()
+        cuentas.forEach(objCuentas => {
+            if(objCuentas.nombre === user.value){
+                if(objCuentas.contraseña === password.value){
+                    window.location = 'index.html'
+                }else{alert('La contraseña es incorrecta')}
+            }else{('El usuario no se encontro')}
+        })
+    })
+    
+}
+

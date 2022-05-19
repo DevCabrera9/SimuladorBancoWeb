@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/signo-de-dolar.png" type="image/x-icon">
+    <title>VBBA-BancoDev</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header-login"></header>
+
+    <div class="muestraUsuario">
+        <div id="padreUsuario"></div>
+    </div>
+
+    <div class="abueloMostrar">
+        <div class="muestraSaldo contenedor">
+            <div class="" id="padreSaldo"></div>
+        </div>
+        <div class="movimientos contenedor">
+            <h2>¿Deseas realizar un movimiento?</h2>
+            <div>
+                <input class="botonMovimientos" type="button" value="REALIZAR MOVIMIENTOS" id="rMovimientos">
+            </div>
+        </div>
+    </div>
+
+    <!-- CREE EL MODAL A MOSTAR AL DAR CLICK EN REALIZAR MOVIMIENTOS -->
+    <div class="modal-contenedor" id="modalContenedor">
+        <div class="modal ">
+            <h2>Ingresa Cantidad:</h2>
+            <input class="ingresaCantidad" type="text" id="mCantidad">
+            <div class="OpcionesDiv">
+                <h2>¿Qué deseas realizar?</h2>
+                <input class="opciones" type="button" value="Retirar" id="btnRetirar">
+                <input class="opciones" type="button" value="Depositar" id="btnDeposito">
+            </div>
+            <div class="cerrarDiv">
+                <input class="cerrarV" type="button" value="Cerrar ventana" id="cerrar">
+            </div>
+        </div>
+    </div>
+    <script src="js/usuario.js"></script>
+</body>
+</html>
